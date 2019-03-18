@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Performance</title>
+    <style>
+        .container{
+            width: 200px;
+            text-align: center;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            width: 80%;
+            height: 20px;
+            padding: 5px;
+            line-height: 20px;
+            font-size: 14px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+            transition: all 500ms ease-in-out;
+        }
+        .btn:hover {
+            cursor: pointer;
+            transform: scale(1.1,1.1);
+            opacity: .9;
+        }
+        i{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            background-size: contain;
+        }
+        .chart-icon{
+            background: url('./images/chart.svg') no-repeat;
+        }
+        .network-icon{
+            background: url('./images/network.svg') no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="webTiming" class="btn"><i class="chart-icon"></i>网页加载时间分析</div>
+        <div id="resourceTiming" class="btn"><i class="network-icon"></i>资源加载时间分析</div>
+    </div>
+</body>
+<script src="./js/popup.js"></script>
+</html>

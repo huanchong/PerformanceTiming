@@ -1,0 +1,21 @@
+{
+    "name": "PerformanceTiming",
+    "description": "a tool measures web performance time",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons":{
+        "16": "./src/images/timing16.png",
+        "32": "./src/images/timing32.png",
+        "48": "./src/images/timing48.png",
+        "128": "./src/images/timing128.png"
+    },
+    "browser_action":{
+        "default_popup": "./src/popup.html",
+        "default_title": "measuring current web performance time"
+    },
+    "content_scripts":[{
+        "matches": ["*://*/*"],
+        "js": ["./src/js/content_scripts.js"]
+    }]
+    
+}
