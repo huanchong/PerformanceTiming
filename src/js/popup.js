@@ -1,5 +1,4 @@
 ((document) => {
-    console.log('123',chrome)
     const query = chrome.tabs.query
     const webTiming = document.querySelector('#webTiming')
     const resourceTiming = document.querySelector('#resourceTiming')
